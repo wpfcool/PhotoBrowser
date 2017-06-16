@@ -1,0 +1,530 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F92CD9251EF3CF4900351C11 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F92CD9241EF3CF4900351C11 /* main.m */; };
+		F92CD9281EF3CF4900351C11 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F92CD9271EF3CF4900351C11 /* AppDelegate.m */; };
+		F92CD92B1EF3CF4900351C11 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F92CD92A1EF3CF4900351C11 /* ViewController.m */; };
+		F92CD92E1EF3CF4900351C11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F92CD92C1EF3CF4900351C11 /* Main.storyboard */; };
+		F92CD9301EF3CF4900351C11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F92CD92F1EF3CF4900351C11 /* Assets.xcassets */; };
+		F92CD9331EF3CF4900351C11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F92CD9311EF3CF4900351C11 /* LaunchScreen.storyboard */; };
+		F92CD93E1EF3CF4900351C11 /* WFPhotoBrowserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F92CD93D1EF3CF4900351C11 /* WFPhotoBrowserTests.m */; };
+		F92CD9491EF3CF4900351C11 /* WFPhotoBrowserUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F92CD9481EF3CF4900351C11 /* WFPhotoBrowserUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F92CD93A1EF3CF4900351C11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F92CD9181EF3CF4900351C11 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F92CD91F1EF3CF4900351C11;
+			remoteInfo = WFPhotoBrowser;
+		};
+		F92CD9451EF3CF4900351C11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F92CD9181EF3CF4900351C11 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F92CD91F1EF3CF4900351C11;
+			remoteInfo = WFPhotoBrowser;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F92CD9201EF3CF4900351C11 /* WFPhotoBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WFPhotoBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F92CD9241EF3CF4900351C11 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F92CD9261EF3CF4900351C11 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F92CD9271EF3CF4900351C11 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F92CD9291EF3CF4900351C11 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F92CD92A1EF3CF4900351C11 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F92CD92D1EF3CF4900351C11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F92CD92F1EF3CF4900351C11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F92CD9321EF3CF4900351C11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F92CD9341EF3CF4900351C11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F92CD9391EF3CF4900351C11 /* WFPhotoBrowserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WFPhotoBrowserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F92CD93D1EF3CF4900351C11 /* WFPhotoBrowserTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WFPhotoBrowserTests.m; sourceTree = "<group>"; };
+		F92CD93F1EF3CF4900351C11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F92CD9441EF3CF4900351C11 /* WFPhotoBrowserUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WFPhotoBrowserUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F92CD9481EF3CF4900351C11 /* WFPhotoBrowserUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WFPhotoBrowserUITests.m; sourceTree = "<group>"; };
+		F92CD94A1EF3CF4900351C11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F92CD91D1EF3CF4900351C11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F92CD9361EF3CF4900351C11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F92CD9411EF3CF4900351C11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F92CD9171EF3CF4900351C11 = {
+			isa = PBXGroup;
+			children = (
+				F92CD9221EF3CF4900351C11 /* WFPhotoBrowser */,
+				F92CD93C1EF3CF4900351C11 /* WFPhotoBrowserTests */,
+				F92CD9471EF3CF4900351C11 /* WFPhotoBrowserUITests */,
+				F92CD9211EF3CF4900351C11 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F92CD9211EF3CF4900351C11 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F92CD9201EF3CF4900351C11 /* WFPhotoBrowser.app */,
+				F92CD9391EF3CF4900351C11 /* WFPhotoBrowserTests.xctest */,
+				F92CD9441EF3CF4900351C11 /* WFPhotoBrowserUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F92CD9221EF3CF4900351C11 /* WFPhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				F92CD9261EF3CF4900351C11 /* AppDelegate.h */,
+				F92CD9271EF3CF4900351C11 /* AppDelegate.m */,
+				F92CD9291EF3CF4900351C11 /* ViewController.h */,
+				F92CD92A1EF3CF4900351C11 /* ViewController.m */,
+				F92CD92C1EF3CF4900351C11 /* Main.storyboard */,
+				F92CD92F1EF3CF4900351C11 /* Assets.xcassets */,
+				F92CD9311EF3CF4900351C11 /* LaunchScreen.storyboard */,
+				F92CD9341EF3CF4900351C11 /* Info.plist */,
+				F92CD9231EF3CF4900351C11 /* Supporting Files */,
+			);
+			path = WFPhotoBrowser;
+			sourceTree = "<group>";
+		};
+		F92CD9231EF3CF4900351C11 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F92CD9241EF3CF4900351C11 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F92CD93C1EF3CF4900351C11 /* WFPhotoBrowserTests */ = {
+			isa = PBXGroup;
+			children = (
+				F92CD93D1EF3CF4900351C11 /* WFPhotoBrowserTests.m */,
+				F92CD93F1EF3CF4900351C11 /* Info.plist */,
+			);
+			path = WFPhotoBrowserTests;
+			sourceTree = "<group>";
+		};
+		F92CD9471EF3CF4900351C11 /* WFPhotoBrowserUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F92CD9481EF3CF4900351C11 /* WFPhotoBrowserUITests.m */,
+				F92CD94A1EF3CF4900351C11 /* Info.plist */,
+			);
+			path = WFPhotoBrowserUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F92CD91F1EF3CF4900351C11 /* WFPhotoBrowser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F92CD94D1EF3CF4900351C11 /* Build configuration list for PBXNativeTarget "WFPhotoBrowser" */;
+			buildPhases = (
+				F92CD91C1EF3CF4900351C11 /* Sources */,
+				F92CD91D1EF3CF4900351C11 /* Frameworks */,
+				F92CD91E1EF3CF4900351C11 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WFPhotoBrowser;
+			productName = WFPhotoBrowser;
+			productReference = F92CD9201EF3CF4900351C11 /* WFPhotoBrowser.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F92CD9381EF3CF4900351C11 /* WFPhotoBrowserTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F92CD9501EF3CF4900351C11 /* Build configuration list for PBXNativeTarget "WFPhotoBrowserTests" */;
+			buildPhases = (
+				F92CD9351EF3CF4900351C11 /* Sources */,
+				F92CD9361EF3CF4900351C11 /* Frameworks */,
+				F92CD9371EF3CF4900351C11 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F92CD93B1EF3CF4900351C11 /* PBXTargetDependency */,
+			);
+			name = WFPhotoBrowserTests;
+			productName = WFPhotoBrowserTests;
+			productReference = F92CD9391EF3CF4900351C11 /* WFPhotoBrowserTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F92CD9431EF3CF4900351C11 /* WFPhotoBrowserUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F92CD9531EF3CF4900351C11 /* Build configuration list for PBXNativeTarget "WFPhotoBrowserUITests" */;
+			buildPhases = (
+				F92CD9401EF3CF4900351C11 /* Sources */,
+				F92CD9411EF3CF4900351C11 /* Frameworks */,
+				F92CD9421EF3CF4900351C11 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F92CD9461EF3CF4900351C11 /* PBXTargetDependency */,
+			);
+			name = WFPhotoBrowserUITests;
+			productName = WFPhotoBrowserUITests;
+			productReference = F92CD9441EF3CF4900351C11 /* WFPhotoBrowserUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F92CD9181EF3CF4900351C11 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = wenpeifang;
+				TargetAttributes = {
+					F92CD91F1EF3CF4900351C11 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					F92CD9381EF3CF4900351C11 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F92CD91F1EF3CF4900351C11;
+					};
+					F92CD9431EF3CF4900351C11 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F92CD91F1EF3CF4900351C11;
+					};
+				};
+			};
+			buildConfigurationList = F92CD91B1EF3CF4900351C11 /* Build configuration list for PBXProject "WFPhotoBrowser" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F92CD9171EF3CF4900351C11;
+			productRefGroup = F92CD9211EF3CF4900351C11 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F92CD91F1EF3CF4900351C11 /* WFPhotoBrowser */,
+				F92CD9381EF3CF4900351C11 /* WFPhotoBrowserTests */,
+				F92CD9431EF3CF4900351C11 /* WFPhotoBrowserUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F92CD91E1EF3CF4900351C11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F92CD9331EF3CF4900351C11 /* LaunchScreen.storyboard in Resources */,
+				F92CD9301EF3CF4900351C11 /* Assets.xcassets in Resources */,
+				F92CD92E1EF3CF4900351C11 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F92CD9371EF3CF4900351C11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F92CD9421EF3CF4900351C11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F92CD91C1EF3CF4900351C11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F92CD92B1EF3CF4900351C11 /* ViewController.m in Sources */,
+				F92CD9281EF3CF4900351C11 /* AppDelegate.m in Sources */,
+				F92CD9251EF3CF4900351C11 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F92CD9351EF3CF4900351C11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F92CD93E1EF3CF4900351C11 /* WFPhotoBrowserTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F92CD9401EF3CF4900351C11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F92CD9491EF3CF4900351C11 /* WFPhotoBrowserUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F92CD93B1EF3CF4900351C11 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F92CD91F1EF3CF4900351C11 /* WFPhotoBrowser */;
+			targetProxy = F92CD93A1EF3CF4900351C11 /* PBXContainerItemProxy */;
+		};
+		F92CD9461EF3CF4900351C11 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F92CD91F1EF3CF4900351C11 /* WFPhotoBrowser */;
+			targetProxy = F92CD9451EF3CF4900351C11 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F92CD92C1EF3CF4900351C11 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F92CD92D1EF3CF4900351C11 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F92CD9311EF3CF4900351C11 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F92CD9321EF3CF4900351C11 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F92CD94B1EF3CF4900351C11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F92CD94C1EF3CF4900351C11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F92CD94E1EF3CF4900351C11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WFPhotoBrowser/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xx.WFPhotoBrowser;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F92CD94F1EF3CF4900351C11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WFPhotoBrowser/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xx.WFPhotoBrowser;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F92CD9511EF3CF4900351C11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WFPhotoBrowserTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xx.WFPhotoBrowserTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WFPhotoBrowser.app/WFPhotoBrowser";
+			};
+			name = Debug;
+		};
+		F92CD9521EF3CF4900351C11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WFPhotoBrowserTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xx.WFPhotoBrowserTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WFPhotoBrowser.app/WFPhotoBrowser";
+			};
+			name = Release;
+		};
+		F92CD9541EF3CF4900351C11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WFPhotoBrowserUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xx.WFPhotoBrowserUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WFPhotoBrowser;
+			};
+			name = Debug;
+		};
+		F92CD9551EF3CF4900351C11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WFPhotoBrowserUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xx.WFPhotoBrowserUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WFPhotoBrowser;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F92CD91B1EF3CF4900351C11 /* Build configuration list for PBXProject "WFPhotoBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F92CD94B1EF3CF4900351C11 /* Debug */,
+				F92CD94C1EF3CF4900351C11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F92CD94D1EF3CF4900351C11 /* Build configuration list for PBXNativeTarget "WFPhotoBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F92CD94E1EF3CF4900351C11 /* Debug */,
+				F92CD94F1EF3CF4900351C11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F92CD9501EF3CF4900351C11 /* Build configuration list for PBXNativeTarget "WFPhotoBrowserTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F92CD9511EF3CF4900351C11 /* Debug */,
+				F92CD9521EF3CF4900351C11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F92CD9531EF3CF4900351C11 /* Build configuration list for PBXNativeTarget "WFPhotoBrowserUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F92CD9541EF3CF4900351C11 /* Debug */,
+				F92CD9551EF3CF4900351C11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F92CD9181EF3CF4900351C11 /* Project object */;
+}
