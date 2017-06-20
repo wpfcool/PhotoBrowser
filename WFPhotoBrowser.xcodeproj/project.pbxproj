@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C473B646FF87280930568BF8 /* libPods-WFPhotoBrowser.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ED8E89F6689DC840F9A49C53 /* libPods-WFPhotoBrowser.a */; };
 		F92CD9251EF3CF4900351C11 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F92CD9241EF3CF4900351C11 /* main.m */; };
 		F92CD9281EF3CF4900351C11 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F92CD9271EF3CF4900351C11 /* AppDelegate.m */; };
 		F92CD92B1EF3CF4900351C11 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F92CD92A1EF3CF4900351C11 /* ViewController.m */; };
@@ -15,6 +16,10 @@
 		F92CD9331EF3CF4900351C11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F92CD9311EF3CF4900351C11 /* LaunchScreen.storyboard */; };
 		F92CD93E1EF3CF4900351C11 /* WFPhotoBrowserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F92CD93D1EF3CF4900351C11 /* WFPhotoBrowserTests.m */; };
 		F92CD9491EF3CF4900351C11 /* WFPhotoBrowserUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F92CD9481EF3CF4900351C11 /* WFPhotoBrowserUITests.m */; };
+		F92CD9591EF3D27B00351C11 /* LoopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F92CD9581EF3D27B00351C11 /* LoopViewController.m */; };
+		F9F199041EF8C4F300B2A974 /* WFPhotoBrowserView.m in Sources */ = {isa = PBXBuildFile; fileRef = F9F199031EF8C4F300B2A974 /* WFPhotoBrowserView.m */; };
+		F9F1990A1EF8CAE800B2A974 /* WFPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = F9F199091EF8CAE800B2A974 /* WFPhotoView.m */; };
+		F9F1990E1EF9145A00B2A974 /* WFPhotoBrowserController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9F1990D1EF9145A00B2A974 /* WFPhotoBrowserController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0331AE30EB0049431118803B /* Pods-WFPhotoBrowser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WFPhotoBrowser.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WFPhotoBrowser/Pods-WFPhotoBrowser.debug.xcconfig"; sourceTree = "<group>"; };
+		6D5226F66A5EBA794A213520 /* Pods-WFPhotoBrowser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WFPhotoBrowser.release.xcconfig"; path = "Pods/Target Support Files/Pods-WFPhotoBrowser/Pods-WFPhotoBrowser.release.xcconfig"; sourceTree = "<group>"; };
+		ED8E89F6689DC840F9A49C53 /* libPods-WFPhotoBrowser.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WFPhotoBrowser.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F92CD9201EF3CF4900351C11 /* WFPhotoBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WFPhotoBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F92CD9241EF3CF4900351C11 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F92CD9261EF3CF4900351C11 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +59,14 @@
 		F92CD9441EF3CF4900351C11 /* WFPhotoBrowserUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WFPhotoBrowserUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F92CD9481EF3CF4900351C11 /* WFPhotoBrowserUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WFPhotoBrowserUITests.m; sourceTree = "<group>"; };
 		F92CD94A1EF3CF4900351C11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F92CD9571EF3D27B00351C11 /* LoopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoopViewController.h; sourceTree = "<group>"; };
+		F92CD9581EF3D27B00351C11 /* LoopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoopViewController.m; sourceTree = "<group>"; };
+		F9F199021EF8C4F300B2A974 /* WFPhotoBrowserView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFPhotoBrowserView.h; sourceTree = "<group>"; };
+		F9F199031EF8C4F300B2A974 /* WFPhotoBrowserView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFPhotoBrowserView.m; sourceTree = "<group>"; };
+		F9F199081EF8CAE800B2A974 /* WFPhotoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFPhotoView.h; sourceTree = "<group>"; };
+		F9F199091EF8CAE800B2A974 /* WFPhotoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFPhotoView.m; sourceTree = "<group>"; };
+		F9F1990C1EF9145A00B2A974 /* WFPhotoBrowserController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFPhotoBrowserController.h; sourceTree = "<group>"; };
+		F9F1990D1EF9145A00B2A974 /* WFPhotoBrowserController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFPhotoBrowserController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C473B646FF87280930568BF8 /* libPods-WFPhotoBrowser.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +95,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		459B671A988D8D65B41EE48F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0331AE30EB0049431118803B /* Pods-WFPhotoBrowser.debug.xcconfig */,
+				6D5226F66A5EBA794A213520 /* Pods-WFPhotoBrowser.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8AACA57345BA3352DE7CBA6F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED8E89F6689DC840F9A49C53 /* libPods-WFPhotoBrowser.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F92CD9171EF3CF4900351C11 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +119,8 @@
 				F92CD93C1EF3CF4900351C11 /* WFPhotoBrowserTests */,
 				F92CD9471EF3CF4900351C11 /* WFPhotoBrowserUITests */,
 				F92CD9211EF3CF4900351C11 /* Products */,
+				459B671A988D8D65B41EE48F /* Pods */,
+				8AACA57345BA3352DE7CBA6F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +137,9 @@
 		F92CD9221EF3CF4900351C11 /* WFPhotoBrowser */ = {
 			isa = PBXGroup;
 			children = (
+				F9F1990C1EF9145A00B2A974 /* WFPhotoBrowserController.h */,
+				F9F1990D1EF9145A00B2A974 /* WFPhotoBrowserController.m */,
+				F9F198FE1EF8C45300B2A974 /* Brower */,
 				F92CD9261EF3CF4900351C11 /* AppDelegate.h */,
 				F92CD9271EF3CF4900351C11 /* AppDelegate.m */,
 				F92CD9291EF3CF4900351C11 /* ViewController.h */,
@@ -110,6 +149,8 @@
 				F92CD9311EF3CF4900351C11 /* LaunchScreen.storyboard */,
 				F92CD9341EF3CF4900351C11 /* Info.plist */,
 				F92CD9231EF3CF4900351C11 /* Supporting Files */,
+				F92CD9571EF3D27B00351C11 /* LoopViewController.h */,
+				F92CD9581EF3D27B00351C11 /* LoopViewController.m */,
 			);
 			path = WFPhotoBrowser;
 			sourceTree = "<group>";
@@ -140,6 +181,17 @@
 			path = WFPhotoBrowserUITests;
 			sourceTree = "<group>";
 		};
+		F9F198FE1EF8C45300B2A974 /* Brower */ = {
+			isa = PBXGroup;
+			children = (
+				F9F199021EF8C4F300B2A974 /* WFPhotoBrowserView.h */,
+				F9F199031EF8C4F300B2A974 /* WFPhotoBrowserView.m */,
+				F9F199081EF8CAE800B2A974 /* WFPhotoView.h */,
+				F9F199091EF8CAE800B2A974 /* WFPhotoView.m */,
+			);
+			path = Brower;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +199,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F92CD94D1EF3CF4900351C11 /* Build configuration list for PBXNativeTarget "WFPhotoBrowser" */;
 			buildPhases = (
+				98EB1DE746AD06E8D902D12B /* [CP] Check Pods Manifest.lock */,
 				F92CD91C1EF3CF4900351C11 /* Sources */,
 				F92CD91D1EF3CF4900351C11 /* Frameworks */,
 				F92CD91E1EF3CF4900351C11 /* Resources */,
+				810ADA5407F3AF3C76693080 /* [CP] Embed Pods Frameworks */,
+				2C08149003C47A9BC52C72DD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -268,12 +323,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2C08149003C47A9BC52C72DD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WFPhotoBrowser/Pods-WFPhotoBrowser-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		810ADA5407F3AF3C76693080 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WFPhotoBrowser/Pods-WFPhotoBrowser-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		98EB1DE746AD06E8D902D12B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F92CD91C1EF3CF4900351C11 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F92CD9591EF3D27B00351C11 /* LoopViewController.m in Sources */,
+				F9F1990E1EF9145A00B2A974 /* WFPhotoBrowserController.m in Sources */,
 				F92CD92B1EF3CF4900351C11 /* ViewController.m in Sources */,
+				F9F199041EF8C4F300B2A974 /* WFPhotoBrowserView.m in Sources */,
+				F9F1990A1EF8CAE800B2A974 /* WFPhotoView.m in Sources */,
 				F92CD9281EF3CF4900351C11 /* AppDelegate.m in Sources */,
 				F92CD9251EF3CF4900351C11 /* main.m in Sources */,
 			);
@@ -422,6 +529,7 @@
 		};
 		F92CD94E1EF3CF4900351C11 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0331AE30EB0049431118803B /* Pods-WFPhotoBrowser.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WFPhotoBrowser/Info.plist;
@@ -433,6 +541,7 @@
 		};
 		F92CD94F1EF3CF4900351C11 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D5226F66A5EBA794A213520 /* Pods-WFPhotoBrowser.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WFPhotoBrowser/Info.plist;
@@ -507,6 +616,7 @@
 				F92CD94F1EF3CF4900351C11 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F92CD9501EF3CF4900351C11 /* Build configuration list for PBXNativeTarget "WFPhotoBrowserTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +625,7 @@
 				F92CD9521EF3CF4900351C11 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F92CD9531EF3CF4900351C11 /* Build configuration list for PBXNativeTarget "WFPhotoBrowserUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +634,7 @@
 				F92CD9551EF3CF4900351C11 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

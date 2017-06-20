@@ -10,4 +10,8 @@
 
 @interface WFPhotoView : UIView
 
+@property(nonatomic, strong) UIImageView *imageView;
+-(void)startLoading;
+-(void)stopLoading;
+- (void)resetSize;
 @end

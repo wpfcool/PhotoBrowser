@@ -12,23 +12,37 @@
 #define WFDEVICEHEIGHT ([UIScreen mainScreen].bounds.size.height)
 @interface WFPhotoBrowserController ()<WFPhotoBrowserViewDelegate>
 @property (nonatomic,strong)WFPhotoBrowserView * browserView;
+@property (nonatomic,strong)UINavigationBar * navigationBar;
 @end
 
 @implementation WFPhotoBrowserController
 
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:YES animated:animated];
+}
+-(void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    [self.navigationController setNavigationBarHidden:NO animated:animated];
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor whiteColor];
+//    self.view.backgroundColor = [UIColor whiteColor];
     _browserView = [[WFPhotoBrowserView alloc]initWithFrame:CGRectMake(0, 0, WFDEVICEWIDTH, WFDEVICEHEIGHT)];
     _browserView.delegate = self;
     _browserView.arrayOfImages = _images;
     _browserView.currentPage = _currentIndex;
     [self.view addSubview:_browserView];
+    
+    
+//    UIToolbar * toolNar = [];
+
 }
 
 -(void)userDidTapImageAtIndex:(NSUInteger)index{
-    self.navigationController.navigationBarHidden = !self.navigationController.isNavigationBarHidden;
+   // self.navigationController.navigationBarHidden = !self.navigationController.isNavigationBarHidden;
+    _navigationBar.hidden = !_navigationBar.isHidden;
 }
 
 - (void)didReceiveMemoryWarning {

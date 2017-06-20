@@ -7,7 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@protocol WFPhotoBrowserViewDelegate;
 @interface WFPhotoBrowserView : UIView
+@property (nonatomic, strong) NSArray *arrayOfImages;
+@property (nonatomic,copy)NSString * placeholderImage; //默认图片
+@property (nonatomic,weak) id<WFPhotoBrowserViewDelegate>delegate;
+@property (nonatomic, strong) UIPageControl *pageControl;
+@property (nonatomic, assign) NSInteger currentPage;
+
+
+@end
+
+
+@protocol WFPhotoBrowserViewDelegate <NSObject>
+
+- (void)userDidTapImageAtIndex:(NSUInteger)index;
 
 @end
