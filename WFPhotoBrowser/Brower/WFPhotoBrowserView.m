@@ -15,6 +15,10 @@
 @property (nonatomic, strong) WFPhotoView *imageView1;
 @property (nonatomic, strong) WFPhotoView *imageView2;
 @property (nonatomic, strong) WFPhotoView *imageView3;
+
+
+@property (nonatomic, strong) UIView * topView;
+@property (nonatomic, strong) UILabel * textLabel;
 @end
 
 @implementation WFPhotoBrowserView
@@ -46,14 +50,14 @@
     [self addSubview:_scrollView];
 
     
-    _pageControl = [[UIPageControl alloc] initWithFrame:CGRectMake(0, 0, 120, 12)];
-    _pageControl.center = CGPointMake(CGRectGetMinX(self.bounds),
-                                      CGRectGetMaxY(self.bounds) - 5);
-    _pageControl.autoresizingMask = (UIViewAutoresizingFlexibleTopMargin |
-                                     UIViewAutoresizingFlexibleLeftMargin |
-                                     UIViewAutoresizingFlexibleRightMargin);
-    [self addSubview:_pageControl];
-    
+//    _pageControl = [[UIPageControl alloc] initWithFrame:CGRectMake(0, 0, 120, 12)];
+//    _pageControl.center = CGPointMake(CGRectGetMinX(self.bounds),
+//                                      CGRectGetMaxY(self.bounds) - 5);
+//    _pageControl.autoresizingMask = (UIViewAutoresizingFlexibleTopMargin |
+//                                     UIViewAutoresizingFlexibleLeftMargin |
+//                                     UIViewAutoresizingFlexibleRightMargin);
+//    [self addSubview:_pageControl];
+//    
     _imageView1 = [[WFPhotoView alloc] initWithFrame:CGRectZero];
     _imageView2 = [[WFPhotoView alloc] initWithFrame:CGRectZero];
     _imageView3 = [[WFPhotoView alloc] initWithFrame:CGRectZero];
@@ -62,6 +66,25 @@
     [_scrollView addSubview:_imageView2];
     [_scrollView addSubview:_imageView3];
     
+    
+    
+    _topView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, self.bounds.size.width, 64)];
+    _topView.backgroundColor = [UIColor blackColor];
+    [self addSubview:_topView];
+    
+    UIButton * backButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [backButton setImage:[UIImage imageNamed:@"navigation_back.png"] forState:UIControlStateNormal];
+    [backButton addTarget:self action:@selector(backClick:) forControlEvents:UIControlEventTouchUpInside];
+    backButton.frame = CGRectMake(0, 20, 40, 44);
+    [_topView addSubview:backButton];
+    
+    
+    _textLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 20,  self.bounds.size.width, 44)];
+    _textLabel.textAlignment = NSTextAlignmentCenter;
+    _textLabel.textColor= [UIColor whiteColor];
+    _textLabel.font = [UIFont systemFontOfSize:15];
+//    _textLabel.text = @"1/4";
+    [_topView addSubview:_textLabel];
     
     
     UITapGestureRecognizer *_tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTap:)];
@@ -80,12 +103,12 @@
     _imageView3.frame = CGRectMake(self.bounds.size.width*2,0, self.bounds.size.width, self.bounds.size.height);
     _scrollView.contentSize = CGSizeMake(self.bounds.size.width * 3, self.bounds.size.height);
     _scrollView.contentOffset = CGPointMake(_scrollView.bounds.size.width, 0);
-    _pageControl.center = CGPointMake(CGRectGetMidX(self.bounds), CGRectGetMaxY(self.bounds) - 30);
+//    _pageControl.center = CGPointMake(CGRectGetMidX(self.bounds), CGRectGetMaxY(self.bounds) - 30);
    
 }
 
 - (void)repositionSubviews {
-    _pageControl.currentPage = _currentPage;
+//    _pageControl.currentPage = _currentPage;
     
     NSInteger page1 = [self adjustPageNum:_currentPage - 1];
     NSInteger page2 = _currentPage;
@@ -130,13 +153,15 @@
 -(void)setCurrentPage:(NSInteger)currentPage{
     _currentPage = [self adjustPageNum:currentPage];
     [self repositionSubviews];
+    
+    _textLabel.text = [NSString stringWithFormat:@"%@/%@",@(_currentPage + 1),@(self.arrayOfImages.count)];
 }
 -(void)setArrayOfImages:(NSArray *)arrayOfImages{
     _arrayOfImages = arrayOfImages;
     if(arrayOfImages.count == 1){
         _scrollView.scrollEnabled = NO;
     }
-    _pageControl.numberOfPages = _arrayOfImages.count;
+//    _pageControl.numberOfPages = _arrayOfImages.count;
 
     [self repositionSubviews];
 }
@@ -185,6 +210,10 @@
 
        
     }
+}
+
+-(void)backClick:(id)sender{
+    [_delegate userDidTapClose];
 }
 
 /*

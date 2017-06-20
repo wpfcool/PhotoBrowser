@@ -12,7 +12,7 @@
 @property (nonatomic, strong) NSArray *arrayOfImages;
 @property (nonatomic,copy)NSString * placeholderImage; //默认图片
 @property (nonatomic,weak) id<WFPhotoBrowserViewDelegate>delegate;
-@property (nonatomic, strong) UIPageControl *pageControl;
+//@property (nonatomic, strong) UIPageControl *pageControl;
 @property (nonatomic, assign) NSInteger currentPage;
 
 
@@ -20,7 +20,8 @@
 
 
 @protocol WFPhotoBrowserViewDelegate <NSObject>
-
+@optional
 - (void)userDidTapImageAtIndex:(NSUInteger)index;
-
+@required
+- (void)userDidTapClose;
 @end

@@ -12,7 +12,7 @@
 #define WFDEVICEHEIGHT ([UIScreen mainScreen].bounds.size.height)
 @interface WFPhotoBrowserController ()<WFPhotoBrowserViewDelegate>
 @property (nonatomic,strong)WFPhotoBrowserView * browserView;
-@property (nonatomic,strong)UINavigationBar * navigationBar;
+
 @end
 
 @implementation WFPhotoBrowserController
@@ -36,15 +36,17 @@
     [self.view addSubview:_browserView];
     
     
+
+    
 //    UIToolbar * toolNar = [];
 
 }
 
--(void)userDidTapImageAtIndex:(NSUInteger)index{
-   // self.navigationController.navigationBarHidden = !self.navigationController.isNavigationBarHidden;
-    _navigationBar.hidden = !_navigationBar.isHidden;
-}
 
+-(void)userDidTapClose{
+    [self.navigationController popViewControllerAnimated:YES];
+
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
