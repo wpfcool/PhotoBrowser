@@ -20,7 +20,6 @@
 		F9F199041EF8C4F300B2A974 /* WFPhotoBrowserView.m in Sources */ = {isa = PBXBuildFile; fileRef = F9F199031EF8C4F300B2A974 /* WFPhotoBrowserView.m */; };
 		F9F1990A1EF8CAE800B2A974 /* WFPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = F9F199091EF8CAE800B2A974 /* WFPhotoView.m */; };
 		F9F1990E1EF9145A00B2A974 /* WFPhotoBrowserController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9F1990D1EF9145A00B2A974 /* WFPhotoBrowserController.m */; };
-		F9F199121EF92FC600B2A974 /* WFBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F9F199111EF92FC600B2A974 /* WFBundle.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,7 +67,6 @@
 		F9F199091EF8CAE800B2A974 /* WFPhotoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFPhotoView.m; sourceTree = "<group>"; };
 		F9F1990C1EF9145A00B2A974 /* WFPhotoBrowserController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFPhotoBrowserController.h; sourceTree = "<group>"; };
 		F9F1990D1EF9145A00B2A974 /* WFPhotoBrowserController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFPhotoBrowserController.m; sourceTree = "<group>"; };
-		F9F199111EF92FC600B2A974 /* WFBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WFBundle.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,7 +188,6 @@
 				F9F199031EF8C4F300B2A974 /* WFPhotoBrowserView.m */,
 				F9F199081EF8CAE800B2A974 /* WFPhotoView.h */,
 				F9F199091EF8CAE800B2A974 /* WFPhotoView.m */,
-				F9F199111EF92FC600B2A974 /* WFBundle.bundle */,
 			);
 			path = Brower;
 			sourceTree = "<group>";
@@ -306,7 +303,6 @@
 			files = (
 				F92CD9331EF3CF4900351C11 /* LaunchScreen.storyboard in Resources */,
 				F92CD9301EF3CF4900351C11 /* Assets.xcassets in Resources */,
-				F9F199121EF92FC600B2A974 /* WFBundle.bundle in Resources */,
 				F92CD92E1EF3CF4900351C11 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
