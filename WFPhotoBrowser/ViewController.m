@@ -26,7 +26,7 @@
 ////
 //    
 //    loopVC.images = @[[UIImage imageNamed:@"empty_banner.png"],[UIImage imageNamed:@"empty_banner.png"]];
-    loopVC.currentIndex = 0;
+    loopVC.currentIndex = 2;
     [self.navigationController pushViewController:loopVC animated:YES];
     
 //    [self presentViewController:loopVC animated:YES completion:nil];

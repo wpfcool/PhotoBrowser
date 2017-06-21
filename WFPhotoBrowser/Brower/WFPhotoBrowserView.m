@@ -197,6 +197,7 @@
     NSLog(@"%lu",(unsigned long)tap.numberOfTapsRequired);
     if(tap.numberOfTapsRequired == 1){
         //单击
+        self.topView.hidden = !self.topView.isHidden;
         if(_delegate && [_delegate respondsToSelector:@selector(userDidTapImageAtIndex:)]){
             [_delegate userDidTapImageAtIndex:_currentPage];
         }
