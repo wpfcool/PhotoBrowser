@@ -22,6 +22,7 @@
 @end
 
 @implementation WFPhotoBrowserView
+
 -(instancetype)initWithFrame:(CGRect)frame{
     if(self = [super initWithFrame:frame]){
         [self initUI];
@@ -38,6 +39,7 @@
 
 -(void)initUI{
     _currentPage = 0;
+    _padding = 10;
     _scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, 0, 0)];
     _scrollView.backgroundColor =[UIColor blackColor];
     _scrollView.delegate = self;
@@ -79,11 +81,12 @@
     [_topView addSubview:backButton];
     
     
-    _textLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 20,  self.bounds.size.width, 44)];
+    _textLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 20,  _topView.bounds.size.width, 44)];
     _textLabel.textAlignment = NSTextAlignmentCenter;
     _textLabel.textColor= [UIColor whiteColor];
     _textLabel.font = [UIFont systemFontOfSize:15];
 //    _textLabel.text = @"1/4";
+    _textLabel.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     [_topView addSubview:_textLabel];
     
     
@@ -97,14 +100,17 @@
 }
 - (void)layoutSubviews {
     [super layoutSubviews];
-    _scrollView.frame = self.bounds;
+    CGRect rect = self.bounds;
+    rect.size.width += _padding;
+    
+    _scrollView.frame = rect;
     _imageView1.frame = CGRectMake(0, 0, self.bounds.size.width, self.bounds.size.height);
-    _imageView2.frame = CGRectMake(self.bounds.size.width, 0 ,self.bounds.size.width, self.bounds.size.height);
-    _imageView3.frame = CGRectMake(self.bounds.size.width*2,0, self.bounds.size.width, self.bounds.size.height);
-    _scrollView.contentSize = CGSizeMake(self.bounds.size.width * 3, self.bounds.size.height);
+    _imageView2.frame = CGRectMake(_padding + self.bounds.size.width, 0 ,self.bounds.size.width, self.bounds.size.height);
+    _imageView3.frame = CGRectMake((self.bounds.size.width + _padding)*2,0, self.bounds.size.width, self.bounds.size.height);
+    _scrollView.contentSize = CGSizeMake((self.bounds.size.width+_padding) * 3, self.bounds.size.height);
     _scrollView.contentOffset = CGPointMake(_scrollView.bounds.size.width, 0);
-//    _pageControl.center = CGPointMake(CGRectGetMidX(self.bounds), CGRectGetMaxY(self.bounds) - 30);
-   
+    _scrollView.contentInset = UIEdgeInsetsMake(0, 0, 0, _padding);
+    _topView.frame = CGRectMake(0, 0, self.bounds.size.width, 64);
 }
 
 - (void)repositionSubviews {
@@ -173,6 +179,7 @@
         self.currentPage++;
     }
 }
+
 - (void)scrollViewDidEndDragging:(UIScrollView *)scrollView
                   willDecelerate:(BOOL)decelerate {
     if (!decelerate) {

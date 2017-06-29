@@ -16,6 +16,8 @@
 @property (nonatomic, assign) NSInteger currentPage;
 
 
+@property (nonatomic,assign)CGFloat padding;
+
 @end
 
 

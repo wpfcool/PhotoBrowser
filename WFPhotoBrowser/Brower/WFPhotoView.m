@@ -25,7 +25,7 @@
         _scrollView.delegate = self;
         _scrollView.maximumZoomScale = 3;
         _scrollView.minimumZoomScale = 1;
-        _scrollView.contentSize = self.imageView.image.size;
+       
         [self addSubview:_scrollView];
         [self.scrollView addSubview:self.imageView];
         self.scrollView.userInteractionEnabled = YES;
@@ -48,6 +48,8 @@
     }
     return _imageView;
 }
+
+
 -(void)startLoading{
     [_activityView startAnimating];
 }
@@ -59,7 +61,7 @@
 {
     [super layoutSubviews];
     _scrollView.frame = self.bounds;
-    _imageView.frame =CGRectMake(0, 0, self.bounds.size.width, 284 * self.bounds.size.height / 320);
+    _imageView.frame =CGRectMake(0, 0, self.bounds.size.width, 284 * self.bounds.size.width / 320);
     _imageView.center = self.scrollView.center;
     _activityView.frame = CGRectMake((self.bounds.size.width -100)/2.0, (self.bounds.size.height -100)/2.0, 100, 100);
 }
