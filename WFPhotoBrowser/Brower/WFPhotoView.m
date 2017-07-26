@@ -55,7 +55,7 @@
 }
 -(void)stopLoading{
     [_activityView stopAnimating];
-
+    ///
 }
 -(void)layoutSubviews
 {
