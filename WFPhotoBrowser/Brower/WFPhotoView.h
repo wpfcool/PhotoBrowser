@@ -14,4 +14,6 @@
 -(void)startLoading;
 -(void)stopLoading;
 - (void)resetSize;
+- (void)resizeImageView;
+
 @end

@@ -38,7 +38,11 @@
 
 -(void)initUI{
     _currentPage = 0;
-    _scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, 0, 0)];
+    
+    CGFloat padding = 10;
+    CGRect rect = self.bounds;
+    rect.size.width += padding;
+    _scrollView = [[UIScrollView alloc] initWithFrame:rect];
     _scrollView.backgroundColor =[UIColor blackColor];
     _scrollView.delegate = self;
     _scrollView.pagingEnabled = YES;
@@ -57,15 +61,27 @@
 //                                     UIViewAutoresizingFlexibleLeftMargin |
 //                                     UIViewAutoresizingFlexibleRightMargin);
 //    [self addSubview:_pageControl];
+//
+    
+    
+
 //    
-    _imageView1 = [[WFPhotoView alloc] initWithFrame:CGRectZero];
-    _imageView2 = [[WFPhotoView alloc] initWithFrame:CGRectZero];
-    _imageView3 = [[WFPhotoView alloc] initWithFrame:CGRectZero];
+//    _imageView1.frame = CGRectMake(0, 0, self.bounds.size.width, self.bounds.size.height);
+//    _imageView2.frame = CGRectMake(padding + self.bounds.size.width, 0 ,self.bounds.size.width, self.bounds.size.height);
+//    _imageView3.frame = CGRectMake((self.bounds.size.width + padding)*2,0, self.bounds.size.width, self.bounds.size.height);
+
+    _imageView1 = [[WFPhotoView alloc] initWithFrame: CGRectMake(0, 0, self.bounds.size.width, self.bounds.size.height)];
+    _imageView2 = [[WFPhotoView alloc] initWithFrame:CGRectMake(padding + self.bounds.size.width, 0 ,self.bounds.size.width, self.bounds.size.height)];
+    _imageView3 = [[WFPhotoView alloc] initWithFrame:CGRectMake((self.bounds.size.width + padding)*2,0, self.bounds.size.width, self.bounds.size.height)];
 
     [_scrollView addSubview:_imageView1];
     [_scrollView addSubview:_imageView2];
     [_scrollView addSubview:_imageView3];
+    _scrollView.contentSize = CGSizeMake((self.bounds.size.width+padding) * 3, self.bounds.size.height);
+    _scrollView.contentOffset = CGPointMake(_scrollView.bounds.size.width, 0);
+    //    _pageControl.center = CGPointMake(CGRectGetMidX(self.bounds), CGRectGetMaxY(self.bounds) - 30);
     
+    _scrollView.contentInset = UIEdgeInsetsMake(0, 0, 0, padding);
     
     
     _topView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, self.bounds.size.width, 64)];
@@ -95,17 +111,17 @@
     [self addGestureRecognizer:doubleGesture];
     [_tapGesture requireGestureRecognizerToFail:doubleGesture];
 }
-- (void)layoutSubviews {
-    [super layoutSubviews];
-    _scrollView.frame = self.bounds;
-    _imageView1.frame = CGRectMake(0, 0, self.bounds.size.width, self.bounds.size.height);
-    _imageView2.frame = CGRectMake(self.bounds.size.width, 0 ,self.bounds.size.width, self.bounds.size.height);
-    _imageView3.frame = CGRectMake(self.bounds.size.width*2,0, self.bounds.size.width, self.bounds.size.height);
-    _scrollView.contentSize = CGSizeMake(self.bounds.size.width * 3, self.bounds.size.height);
-    _scrollView.contentOffset = CGPointMake(_scrollView.bounds.size.width, 0);
-//    _pageControl.center = CGPointMake(CGRectGetMidX(self.bounds), CGRectGetMaxY(self.bounds) - 30);
-   
-}
+//- (void)layoutSubviews {
+//    [super layoutSubviews];
+//    _scrollView.frame = self.bounds;
+//    _imageView1.frame = CGRectMake(0, 0, self.bounds.size.width, self.bounds.size.height);
+//    _imageView2.frame = CGRectMake(self.bounds.size.width, 0 ,self.bounds.size.width, self.bounds.size.height);
+//    _imageView3.frame = CGRectMake(self.bounds.size.width*2,0, self.bounds.size.width, self.bounds.size.height);
+//    _scrollView.contentSize = CGSizeMake(self.bounds.size.width * 3, self.bounds.size.height);
+//    _scrollView.contentOffset = CGPointMake(_scrollView.bounds.size.width, 0);
+////    _pageControl.center = CGPointMake(CGRectGetMidX(self.bounds), CGRectGetMaxY(self.bounds) - 30);
+//   
+//}
 
 - (void)repositionSubviews {
 //    _pageControl.currentPage = _currentPage;
@@ -135,6 +151,7 @@
                 [photoView stopLoading];
                 [photoView.imageView setContentMode:UIViewContentModeScaleAspectFit];
                 NSLog(@"%@",error);
+                [photoView resizeImageView];
                 
             }];
         }

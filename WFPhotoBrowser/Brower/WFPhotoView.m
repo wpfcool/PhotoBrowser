@@ -34,6 +34,7 @@
         _activityView = [[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
         _activityView.hidesWhenStopped = YES;
         _activityView.frame = CGRectMake(0, 0, 100, 100);
+        _activityView.center = self.center;
         [self addSubview:_activityView];
         
     }
@@ -41,12 +42,40 @@
 }
 - (UIImageView *)imageView {
     if (_imageView==nil) {
-        _imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, self.bounds.size.width, 284 * self.bounds.size.height / 320)];
-        _imageView.center = self.scrollView.center;
+        CGFloat width = self.frame.size.width;
+//        _imageView.frame =;
+        _imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, width, width * 2.0 / 3)];
+        _imageView.center = CGPointMake(self.bounds.size.width/2, self.bounds.size.height/2);
         [_imageView setContentMode:UIViewContentModeScaleAspectFit];
         _imageView.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin|UIViewAutoresizingFlexibleTopMargin|UIViewAutoresizingFlexibleHeight|UIViewAutoresizingFlexibleWidth;
     }
     return _imageView;
+}
+- (void)resizeImageView {
+    if (_imageView.image) {
+        CGSize imageSize = _imageView.image.size;
+        CGFloat width = _imageView.frame.size.width;
+        CGFloat height = width * (imageSize.height / imageSize.width);
+        CGRect rect = CGRectMake(0, 0, width, height);
+        _imageView.frame = rect;
+        
+        // If image is very high, show top content.
+        if (height <= self.bounds.size.height) {
+            _imageView.center = CGPointMake(self.bounds.size.width/2, self.bounds.size.height/2);
+        } else {
+            _imageView.center = CGPointMake(self.bounds.size.width/2, height/2);
+        }
+        
+        // If image is very wide, make sure user can zoom to fullscreen.
+//        if (width / height > 2) {
+//            self.maximumZoomScale = self.bounds.size.height / height;
+//        }
+    } else {
+        CGFloat width = self.frame.size.width;
+        _imageView.frame = CGRectMake(0, 0, width, width * 2.0 / 3);
+        _imageView.center = CGPointMake(self.bounds.size.width/2, self.bounds.size.height/2);
+    }
+    self.scrollView.contentSize = _imageView.frame.size;
 }
 -(void)startLoading{
     [_activityView startAnimating];
@@ -55,14 +84,14 @@
     [_activityView stopAnimating];
     ///
 }
--(void)layoutSubviews
-{
-    [super layoutSubviews];
-    _scrollView.frame = self.bounds;
-    _imageView.frame =CGRectMake(0, 0, self.bounds.size.width, 284 * self.bounds.size.height / 320);
-    _imageView.center = self.scrollView.center;
-    _activityView.frame = CGRectMake((self.bounds.size.width -100)/2.0, (self.bounds.size.height -100)/2.0, 100, 100);
-}
+//-(void)layoutSubviews
+//{
+//    [super layoutSubviews];
+//    _scrollView.frame = self.bounds;
+//    _imageView.frame =CGRectMake(0, 0, self.bounds.size.width, 284 * self.bounds.size.height / 320);
+//    _imageView.center = self.scrollView.center;
+//    _activityView.frame = CGRectMake((self.bounds.size.width -100)/2.0, (self.bounds.size.height -100)/2.0, 100, 100);
+//}
 
 - (void)resetSize {
     [self.scrollView setZoomScale:1.0];
