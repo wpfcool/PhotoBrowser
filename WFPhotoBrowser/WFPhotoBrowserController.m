@@ -29,13 +29,15 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 //    self.view.backgroundColor = [UIColor whiteColor];
-    _browserView = [[WFPhotoBrowserView alloc]init];
-    _browserView.frame = CGRectMake(0, 0, WFDEVICEWIDTH, WFDEVICEHEIGHT);
+    _browserView = [[WFPhotoBrowserView alloc]initWithFrame:CGRectMake(0, 0, WFDEVICEWIDTH, WFDEVICEHEIGHT)];
     _browserView.delegate = self;
     _browserView.arrayOfImages = _images;
     _browserView.currentPage = _currentIndex;
-    _browserView.padding = 40;
     [self.view addSubview:_browserView];
+    
+    
+
+    
 //    UIToolbar * toolNar = [];
 
 }
